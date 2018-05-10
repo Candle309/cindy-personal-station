@@ -33,9 +33,9 @@ app.use('/p_p', express.static(process.cwd()+'/personal_page/public'));
 app.use('/p_c', express.static(process.cwd()+'/pomodoro_clock/public'));
 app.use('/r_q_m', express.static(process.cwd()+'/random_quote_machine/public'));
 app.use('/s_g', express.static(process.cwd()+'/simon_game/public'));
-app.use('/g_l/public/', express.static(process.cwd()+'/game_of_life/public'));
-app.use('/g_l/build/', express.static(process.cwd()+'/game_of_life/build'));
-app.use('/g_l/src/', express.static(process.cwd()+'/game_of_life/src'));
+app.use('/g_l/public', express.static(process.cwd()+'/game_of_life/public'));
+app.use('/g_l/build', express.static(process.cwd()+'/game_of_life/build'));
+app.use('/g_l/src', express.static(process.cwd()+'/game_of_life/src'));
 
 // server.listen("8000");
 
