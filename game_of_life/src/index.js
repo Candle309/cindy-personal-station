@@ -39,16 +39,7 @@ class TopPanel extends React.Component {
     this.props.pauseGame();
   }
   
-  
-  
-  // pauseGame() {
-  //   this.props.pauseGame();
-  // }
-  // runGame() {
-  //   if (this.props.aliveCount > 0) {
-  //    this.props.runGame();
-  //   }
-  // }
+
   clearBoard() {
     this.setState({isRun: false});
     this.props.clearGame(true);
