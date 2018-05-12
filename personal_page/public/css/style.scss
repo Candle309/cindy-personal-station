@@ -319,6 +319,9 @@ background: linear-gradient(45deg, rgba(7, 70, 96, 1), rgba(169, 205, 206, 1));	
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', endColorstr='#25bad0', GradientType=0 ); /* IE6-9 */
   
 }
+.about-photo {
+  margin-top:20px;
+}
 #about h2 {
 	color: rgba(255,255,255,0.8);
 }
@@ -341,184 +344,176 @@ $orange: #ffa500;
 $green: #27ae60;
 $pink: #c10fa9;
 $li-padding: 5px;
-$progressbar-title-color: #fff;
+$progressbar-title-color: #0d4d4f;
 $animation-delay: .7s;
 $animation-step: .3s;
 @mixin border-radius($radius){
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+-webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
 }
 
 #skll {
-  background: linear-gradient(to top, rgba(178, 215, 232, 1) 0%, rgba(169, 205, 206,1) 50%);
-  background-color: #1a1a1a;
-  font-family: 'PT Sans', sans-serif;
-  padding: 150px 0;
-  overflow:hidden;
+background: linear-gradient(to top, rgba(178, 215, 232, 1) 0%, rgba(169, 205, 206,1) 50%);
+font-family: 'PT Sans', sans-serif;
+padding: 150px 0;
+overflow:hidden;
 }
 .sk_title {
-  text-align: center;
-  margin-right: 50px;
-  margin-left: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
+text-align: center;
+margin-right: 50px;
+margin-left: 50px;
+padding-left: 100px;
+padding-right: 100px;
+  p {
+    color:#0d4d4f;
+    font-weight: 200;
+  }
 }
 .skills-bars {
-  // background:green;
-  margin: 50px;
+margin: 50px;
 }
 #h-icon {
-  // background:red;
-  text-align: center;  
-  width:82px;
-  height: 67px;
-  margin-left: -20px;
-  margin-right: 10px;
+text-align: center;
+width:82px;
+height: 67px;
+margin-left: -20px;
+margin-right: 10px;
 }
 .mIcon {
-  // background: green;
-  position: relative;
-  margin: auto;
-  bottom: -5px;
-  font-size: 65px;
-  color: #0e6856;
+position: relative;
+margin: auto;
+bottom: -5px;
+font-size: 65px;
+color: #0e6856;
 }
 .skills-bar-container{
-  // background: pink;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  width: 90%;
-  height: 100%;
-  min-width: 200px;
-  // top: 50%;
-  // left: 50%;
-  // -webkit-transform: translate(-50%, -50%);
-  // transform: translate(-50%, -50%);
-  list-style:none;
-  
-  li{
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+width: 90%;
+height: auto;
+min-width: 200px;
+list-style:none;
+ li{
+  position: relative;
+  width: 100%;
+  padding: $li-padding;
+  margin-bottom: 10px;
+   .progressbar-title{
+    color: $progressbar-title-color;
+    font-weight: 200;
+    h3{
+      display: inline-block;
+    }
+    .percent{
+      position: absolute;
+      right: 15px;
+      bottom: 25px;
+    }
+  }// end progressbar-title
+   .bar-container{
+    background: #555;
     position: relative;
     width: 100%;
-    padding: $li-padding;
-    margin-bottom: 10px;
-    
-    .progressbar-title{
-      color: $progressbar-title-color;
-      
-      h3{
-        display: inline-block;
-      }
-      .percent{
-        position: absolute;
-        right: 15px;
-        bottom: 25px;
-      }
-    }// end progressbar-title
-    
-    .bar-container{
-      background: #555;
-      position: relative;
-      width: 100%;
-      height: 5px;
-      margin-top: 5px;
-      display: block;
+    height: 5px;
+    margin-top: 5px;
+    display: block;
+    @include border-radius(5px);
+  
+    .progressbar{
+      position:absolute;
+      width:0%;
+      height: 100%;
       @include border-radius(5px);
-      
-      .progressbar{
-        position:absolute;
-        width:0%;
-        height: 100%;
-        @include border-radius(5px);
 
-        -webkit-animation-duration: 1.3s;
-        animation-duration: 1.3s;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-      }
-      .p-java{
-        -webkit-animation-name: progress-java;
-        animation-name: progress-java;
-        -webkit-animation-delay: $animation-delay;
-        animation-delay: $animation-delay;
-      }
-      .p-node{
-        -webkit-animation-name: progress-node;
-        animation-name: progress-node;
-        -webkit-animation-delay: $animation-delay;
-        animation-delay: $animation-delay;
-      }
+      -webkit-animation-duration: 1.3s;
+      animation-duration: 1.3s;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .p-java{
+      -webkit-animation-name: progress-java;
+      animation-name: progress-java;
+      -webkit-animation-delay: $animation-delay;
+      animation-delay: $animation-delay;
+    }
+    .p-node{
+      -webkit-animation-name: progress-node;
+      animation-name: progress-node;
+      -webkit-animation-delay: $animation-delay;
+      animation-delay: $animation-delay;
+    }
 
-      .p-css{
-        -webkit-animation-name: progress-css;
-        animation-name: progress-css;
-        -webkit-animation-delay: $animation-delay + $animation-step*3;
-        animation-delay: $animation-delay + $animation-step*3;
-      }
-      .p-web{
-        -webkit-animation-name: progress-web;
-        animation-name: progress-web;
-        -webkit-animation-delay: $animation-delay + $animation-step*3;
-        animation-delay: $animation-delay + $animation-step*3;
-      }
+    .p-css{
+      -webkit-animation-name: progress-css;
+      animation-name: progress-css;
+      -webkit-animation-delay: $animation-delay + $animation-step*3;
+      animation-delay: $animation-delay + $animation-step*3;
+    }
+    .p-web{
+      -webkit-animation-name: progress-web;
+      animation-name: progress-web;
+      -webkit-animation-delay: $animation-delay + $animation-step*3;
+      animation-delay: $animation-delay + $animation-step*3;
+    }
 
-      .p-javascript{
-        -webkit-animation-name: progress-javascript;
-        animation-name: progress-javascript;
-        -webkit-animation-delay:$animation-delay + $animation-step;
-        animation-delay: $animation-delay + $animation-step;
-      }
-      .p-npm{
-        -webkit-animation-name: progress-npm;
-        animation-name: progress-npm;
-        -webkit-animation-delay:$animation-delay + $animation-step;
-        animation-delay: $animation-delay + $animation-step;
-      }
+    .p-javascript{
+      -webkit-animation-name: progress-javascript;
+      animation-name: progress-javascript;
+      -webkit-animation-delay:$animation-delay + $animation-step;
+      animation-delay: $animation-delay + $animation-step;
+    }
+    .p-npm{
+      -webkit-animation-name: progress-npm;
+      animation-name: progress-npm;
+      -webkit-animation-delay:$animation-delay + $animation-step;
+      animation-delay: $animation-delay + $animation-step;
+    }
 
-      .p-html{
-        -webkit-animation-name: progress-html;
-        animation-name: progress-html;
-        -webkit-animation-delay: $animation-delay + $animation-step*2;
-        animation-delay: $animation-delay + $animation-step*2;
-      }
-      .p-android{
-        -webkit-animation-name: progress-android;
-        animation-name: progress-android;
-        -webkit-animation-delay: $animation-delay + $animation-step*2;
-        animation-delay: $animation-delay + $animation-step*2;
-      }
-      
-      .p-react{
-        -webkit-animation-name: progress-react;
-        animation-name: progress-react;
-        -webkit-animation-delay: $animation-delay + $animation-step*4;
-        animation-delay: $animation-delay + $animation-step*4;
-      }
-      .p-app{
-        -webkit-animation-name: progress-app;
-        animation-name: progress-app;
-        -webkit-animation-delay: $animation-delay + $animation-step*4;
-        animation-delay: $animation-delay + $animation-step*4;
-      }
-      
-      .p-angular{
-        -webkit-animation-name: progress-angular;
-        animation-name: progress-angular;
-        -webkit-animation-delay: $animation-delay + $animation-step*5;
-        animation-delay: $animation-delay + $animation-step*5;
-      }
-      .p-db{
-        -webkit-animation-name: progress-db;
-        animation-name: progress-db;
-        -webkit-animation-delay: $animation-delay + $animation-step*5;
-        animation-delay: $animation-delay + $animation-step*5;
-      }
-    }// end bar-container
-  }
+    .p-html{
+      -webkit-animation-name: progress-html;
+      animation-name: progress-html;
+      -webkit-animation-delay: $animation-delay + $animation-step*2;
+      animation-delay: $animation-delay + $animation-step*2;
+    }
+    .p-android{
+      -webkit-animation-name: progress-android;
+      animation-name: progress-android;
+      -webkit-animation-delay: $animation-delay + $animation-step*2;
+      animation-delay: $animation-delay + $animation-step*2;
+    }
+  
+    .p-react{
+      -webkit-animation-name: progress-react;
+      animation-name: progress-react;
+      -webkit-animation-delay: $animation-delay + $animation-step*4;
+      animation-delay: $animation-delay + $animation-step*4;
+    }
+    .p-app{
+      -webkit-animation-name: progress-app;
+      animation-name: progress-app;
+      -webkit-animation-delay: $animation-delay + $animation-step*4;
+      animation-delay: $animation-delay + $animation-step*4;
+    }
+  
+    .p-angular{
+      -webkit-animation-name: progress-angular;
+      animation-name: progress-angular;
+      -webkit-animation-delay: $animation-delay + $animation-step*5;
+      animation-delay: $animation-delay + $animation-step*5;
+    }
+    .p-db{
+      -webkit-animation-name: progress-db;
+      animation-name: progress-db;
+      -webkit-animation-delay: $animation-delay + $animation-step*5;
+      animation-delay: $animation-delay + $animation-step*5;
+    }
+  }// end bar-container
+}
 }
 
 .progressred{background-color:$red;}
@@ -707,16 +702,22 @@ ol.type li a:hover {
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', endColorstr='#25bad0', GradientType=0 ); /* IE6-9 */
 font: normal 16px/1.5 "Helvetica Neue", sans-serif;
 overflow-x: hidden;
-  h1 {
+  #e-h1 {
+    margin-top:15px;
     font-size: 1em;
     color: rgba(255, 255, 255, 1);
   }
-  h2 {
+  #e-h2 {
     font-size: 0.9em;
     color: orange;
   }
+  #e-h3 {
+    font-size: 0.8em;
+    color: #efd775;
+    margin-top:5px;
+  }
   p{
-    margin-top: -20px;
+    margin-top: 20px;
   }
   .timeline ul {
     padding: 30px 0;
@@ -772,7 +773,7 @@ overflow-x: hidden;
   animation:revealScaleUp 0.75s 2.82s ease both 1;
 }
 
-.timeline ul li div {
+.timeline ul li #e-div {
   position: relative;
   bottom: 0;
   width: 400px;
@@ -784,7 +785,7 @@ overflow-x: hidden;
   // background: #570c72;
 }
 
-.timeline ul li div::before {
+.timeline ul li #e-div::before {
   content: '';
   position: absolute;
   bottom: 7px;
@@ -793,21 +794,21 @@ overflow-x: hidden;
   border-style: solid;
 }
 
-.timeline ul li:nth-child(odd) div {
+.timeline ul li:nth-child(odd) #e-div {
   left: 56px;
 }
 
-.timeline ul li:nth-child(odd) div::before {
+.timeline ul li:nth-child(odd) #e-div::before {
   left: -22px;
   border-width: 10px 20px 10px 0;
   border-color: transparent #fff transparent transparent;
 }
 
-.timeline ul li:nth-child(even) div {
+.timeline ul li:nth-child(even) #e-div {
   left: -449px;
 }
 
-.timeline ul li:nth-child(even) div::before {
+.timeline ul li:nth-child(even) #e-div::before {
   right: -22px;
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #fff;
@@ -836,21 +837,21 @@ time {
   border-radius: 50%;
 }
 
-.timeline ul li div {
+.timeline ul li #e-div {
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease-in-out;
 }
 
-.timeline ul li:nth-child(odd) div {
+.timeline ul li:nth-child(odd) #e-div {
   transform: translate3d(200px, 0, 0);
 }
 
-.timeline ul li:nth-child(even) div {
+.timeline ul li:nth-child(even) #e-div {
   transform: translate3d(-200px, 0, 0);
 }
 
-.timeline ul li.in-view div {
+.timeline ul li.in-view #e-div {
   transform: none;
   visibility: visible;
   opacity: 1;
@@ -864,7 +865,7 @@ time {
   .timeline ul li div {
     width: 250px;
   }
-  .timeline ul li:nth-child(even) div {
+  .timeline ul li:nth-child(even) #e-div {
     left: -289px;
     /*250+45-6*/
   }
@@ -874,39 +875,19 @@ time {
   .timeline ul li {
     margin-left: 20px;
   }
-  .timeline ul li div {
+  .timeline ul li #e-div {
     width: calc(100vw - 91px);
   }
-  .timeline ul li:nth-child(even) div {
+  .timeline ul li:nth-child(even) #e-div {
     left: 45px;
   }
-  .timeline ul li:nth-child(even) div::before {
+  .timeline ul li:nth-child(even) #e-div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
   }
 }
 }
-// #experience h2 {
-// 	color: rgba(255,255,255,0.8);
-// }
-// #experience h3 {
-// 	color: #0a4b55;
-// }
-// img.img-circle.team-img {
-// 	width: 160px;
-// 	height: 160px;
-// }
-// #experience .thumbnail {
-// 	background: transparent;
-// 	border: 0;
-// }
-// #experience .thumbnail .caption {
-// 	padding: 9px;
-// 	color: rgba(255,255,255,0.9);
-// }
-
-
 
 
 /* Contact Section */
