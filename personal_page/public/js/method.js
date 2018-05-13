@@ -1,7 +1,6 @@
 $(document).ready(function () {
-    //initialize swiper when document ready  
+    /*homepage swiper*/ 
     var mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
         direction: 'horizontal',
         // effect: 'fade',
         speed: 1600,
@@ -14,8 +13,9 @@ $(document).ready(function () {
         keyboardControl: true
     });
 
+    /* experience timeline */
     'use strict';
-    // define variables
+       
     var items = document.querySelectorAll(".timeline li");
 
     // check if an element is in viewport
@@ -41,6 +41,7 @@ $(document).ready(function () {
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
 
+    /* skill animation */
     var $window = $(window);
     var $elem = $("#skll");
 
