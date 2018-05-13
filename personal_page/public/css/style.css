@@ -1274,6 +1274,19 @@ label {
 
 #contact .btn {
   margin-top: 20px;
+  color: #e0530d;
+  border-color: #e0530d;
+}
+
+#contact .btn:hover,
+#contact .btn:active,
+#contact .btn:focus,
+#contact .btn.active {
+  background-color: #e0530d;
+  border-color: #e0530d;
+  color: #053740;
+  outline: none;
+  outline-offset: none;
 }
 
 #contact .social {

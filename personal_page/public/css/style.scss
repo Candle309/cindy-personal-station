@@ -966,8 +966,23 @@ color: #ccc;
 color: #ccc;
 }
 #contact .btn {
-	margin-top: 20px;
+  margin-top: 20px;
+  color: rgb(224, 83, 13);
+  border-color: rgb(224, 83, 13);
 }
+#contact {
+  .btn:hover, 
+  .btn:active, 
+  .btn:focus,
+  .btn.active{
+  background-color: rgb(224, 83, 13);
+  border-color: rgb(224, 83, 13);
+  color: #053740;
+  outline: none;
+  outline-offset: none;
+  }
+}
+
 #contact .social {
   background: rgba(204, 204, 204, 0.6);
   margin-left: 50px;
