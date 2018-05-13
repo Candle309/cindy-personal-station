@@ -71,6 +71,8 @@
 
             // Pretty Photo
             $("a[rel^='prettyPhoto']").prettyPhoto({
+                default_width: 1000, 
+                default_height: 750,
                 social_tools: false
             });
 
