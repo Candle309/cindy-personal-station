@@ -37,9 +37,9 @@ app.use('/g_l/public', express.static(process.cwd()+'/game_of_life/public'));
 app.use('/g_l/build', express.static(process.cwd()+'/game_of_life/build'));
 app.use('/g_l/src', express.static(process.cwd()+'/game_of_life/src'));
 
-server.listen("8000");
+// server.listen("8000");
 
-// server.listen(process.env.PORT, process.env.IP, function(){
-//     var addr = server.address();
-//     console.log("Chat server listening at", (addr.address||process.env.IP) + ":" + (addr.port||process.env.PORT));
-//   });
+server.listen(process.env.PORT, process.env.IP, function(){
+    var addr = server.address();
+    console.log("Chat server listening at", (addr.address||process.env.IP) + ":" + (addr.port||process.env.PORT));
+  });
