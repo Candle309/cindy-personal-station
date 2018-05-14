@@ -1009,7 +1009,7 @@ ol.type li a:hover {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(top, #000 0%, #283048 40%, #55679a 80%, #9298af);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#20a6bb", endColorstr="#25bad0", GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#283048", endColorstr="#55679a", GradientType=0 );
   /* IE6-9 */
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   overflow-x: hidden;
