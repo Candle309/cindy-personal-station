@@ -222,5 +222,24 @@ body{
     margin-left: -40px;
     margin-top: -1px;
   }
-  
+
+  #footer {
+    margin-top: 40px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+  }
+  #footer p{
+    font-size:15px;
+    color: white;
+  }
+  #footer a{
+    text-decoration: none;
+    color: #0b60a5;  
+  }
+  #footer a:hover{
+    color: #43b0ef;
+  }
   

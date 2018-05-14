@@ -12,58 +12,69 @@
   </head>
   <body> 
     <div class="container">
-      <div class="simonBoard">
-        <div id="0" class="pad green unclickable"></div>
-        <div id="1" class="pad red unclickable"></div>
-        <div id="2" class="pad yellow unclickable"></div>
-        <div id="3" class="pad blue unclickable"></div>
-        <div class="controls">
-          <div class="title">SIMON</div>
-          <div class="myCtrl">
-            <div class="display inline">
-              <p class="count status-off">--</p>
-              <p class="label">COUNT</p>
-            </div>
-            <div class="myBtn inline">
-              <div class="round-btn unclickable" id="start"></div>
-              <p class="label">START</p>
-            </div>
-            <div class="myBtn inline">
-              <p class="led" id="strict-led"></p>
-              <div class="round-btn s-btn clickable" id="strict"></div>
-              <p class="label">STRICT</p>   
-            </div>
+      <div class="row">
+          <div class="simonBoard col-md-6">
+              <div id="0" class="pad green unclickable"></div>
+              <div id="1" class="pad red unclickable"></div>
+              <div id="2" class="pad yellow unclickable"></div>
+              <div id="3" class="pad blue unclickable"></div>
+              <div class="controls">
+                <div class="title">SIMON</div>
+                <div class="myCtrl">
+                  <div class="display inline">
+                    <p class="count status-off">--</p>
+                    <p class="label">COUNT</p>
+                  </div>
+                  <div class="myBtn inline">
+                    <div class="round-btn unclickable" id="start"></div>
+                    <p class="label">START</p>
+                  </div>
+                  <div class="myBtn inline">
+                    <p class="led" id="strict-led"></p>
+                    <div class="round-btn s-btn clickable" id="strict"></div>
+                    <p class="label">STRICT</p>   
+                  </div>
+                </div>
+                <div class="switchContainer">
+                  <p class="label inline">OFF</p>
+                  <div class="outer-switch inline clickable">
+                    <div class="inner-switch" id="inner"></div>
+                  </div>
+                  <p class="label inline">ON</p>
+                </div>
+              </div>
           </div>
-          <div class="switchContainer">
-            <p class="label inline">OFF</p>
-            <div class="outer-switch inline clickable">
-              <div class="inner-switch" id="inner"></div>
+          <div class="helper col-md-6">  
+              <div class="lifes">
+                <div class="inline userLife">Life</div>
+                <div class="inline" id="life1"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
+                <div class="inline" id="life2"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
+                <div class="inline" id="life3"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
+                <div class="inline" id="life4"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
+                <div class="inline" id="life5"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
+              </div>
+              <div class="instr">
+                <h3 class="how">How to play:</h3>
+                <p class="p1">This device will create a series of tones and lights. You need to repeat the sequence. If you succeeds, the series becomes progressively longer and more complex. Once you fails:</p>
+                <ul class="uL">
+                  <li>in strict mode: the game is over.</li>
+                  <li>in non-strict mode: you will lose one life and game is over when no life left (You have 5 lives in total).</li>
+                </ul>
+                <h3 class="tryIt">Try it! Have Fun!</h3>
+              </div>
+              
             </div>
-            <p class="label inline">ON</p>
-          </div>
-        </div>
       </div>
-      <div class="helper">  
-        <div class="lifes">
-          <div class="inline userLife">Life</div>
-          <div class="inline" id="life1"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
-          <div class="inline" id="life2"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
-          <div class="inline" id="life3"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
-          <div class="inline" id="life4"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
-          <div class="inline" id="life5"><i class="fa fa-heart" id="heart1"></i><i class="fa fa-heart-o" id="heart2"></i></div>
-        </div>
-        <div class="instr">
-          <h3 class="how">How to play:</h3>
-          <p class="p1">This device will create a series of tones and lights. You need to repeat the sequence. If you succeeds, the series becomes progressively longer and more complex. Once you fails:</p>
-          <ul class="uL">
-            <li>in strict mode: the game is over.</li>
-            <li>in non-strict mode: you will lose one life and game is over when no life left (You have 5 lives in total).</li>
-          </ul>
-          <h3 class="tryIt">Try it! Have Fun!</h3>
-        </div>
-        
-      </div>
+      
+      
     
+    </div>
+    <div id="footer">
+        <div class="text-center">
+          <p>Copyright &copy; 2018. Designed by
+            <a href="/home" rel="nofollow">Cindy</a>
+          </p>
+        </div>
     </div>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/s_g/js/simon.js"></script>

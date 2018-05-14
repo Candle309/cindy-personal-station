@@ -9,7 +9,9 @@ background: -ms-radial-gradient(center, circle, $bg 20%, rgba(0,0,0,1));
 
 header {
 	position: fixed;
-	top: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 	background: grey;
 	width: 100%;
 	padding: 5px;
@@ -23,7 +25,7 @@ header {
 #container {
   width: 850px;
   height: 510px;
-  margin: 180px auto 40px;
+  margin: 180px auto 150px;
   text-align: center;
 }
 
@@ -181,4 +183,20 @@ h3 {
 }
 .active {
     background: rgba(130, 30, 40, 1);
+}
+
+#footer {
+  margin-top: 350px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+  a{
+    text-decoration: none;
+    color: #0b60a5;
+    &:hover{
+      color: #43b0ef;
+    }
+  }
 }
