@@ -915,10 +915,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', end
 #contact form {
 	padding: 20px 0;
 }
-#contact i.fa {
-	color: #121d1f;
-	margin-bottom: 10px;
-}
 #contact .text-danger {
 	color: #ff6600;
 	text-align: left;
@@ -1017,7 +1013,12 @@ color: #ccc;
     color: #333;
   }
   .fa-instagram{
-    color: #3f729b;
+    // color: #cd486b;
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 	
 }
