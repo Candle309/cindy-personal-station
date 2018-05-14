@@ -339,13 +339,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
   background: #20a6bb;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #20a6bb 0%, #25bad0 50%);
+  background: -moz-linear-gradient(45deg, #074660 0%, #69778e 50%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #20a6bb 0%, #25bad0 50%);
+  background: -webkit-linear-gradient(45deg, #074660 0%, #69778e 50%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #074660, #a9cdce);
+  background: linear-gradient(45deg, #074660, #69778e);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#20a6bb", endColorstr="#25bad0", GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#074660", endColorstr="#69778e", GradientType=0 );
   /* IE6-9 */
 }
 
@@ -353,12 +353,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   margin-top: 20px;
 }
 
-#about h2 {
-  color: rgba(255, 255, 255, 0.8);
-}
-
 #about h4 {
-  color: #0a4b55;
+  color: #0e163f;
 }
 
 #about .about-text {
