@@ -863,6 +863,7 @@ ul.cat li {
 ol.type li {
   display: inline-block;
   margin-left: 20px;
+  margin-top: 25px;
   text-transform: uppercase;
 }
 
